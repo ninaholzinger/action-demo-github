@@ -26,3 +26,6 @@ jobs:
       - name: create .ssh/known_hosts
         run: |
           ssh-keyscan -H -t rsa -v 130.61.254.68  >> ~/.ssh/known_hosts
+      - name: copy binaries to oravm
+        run: |
+          echo "hallo, ich bin hier"
